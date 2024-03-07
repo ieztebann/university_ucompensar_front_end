@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body style="margin: 0;">
+  <app-root></app-root>
+</body>
+<script>
+  submit=document.querySelector(".submit");
+  text=document.querySelector(".sendbox input");
+  chatbox=document.querySelector(".chatbox");
+  submit.addEventListener("click",sendmessage)
+  text.addEventListener("keyup",function(e){
+      console.log(e)
+      if (e.key === 'Enter' || e.keyCode === 13)
+      sendmessage()
+  })
+  function sendmessage()
+  {
+      data=text.value.trim()
+      if(data!="")
+          chatbox.innerHTML+='<div class="eachmessage sent animated"><p>'+data+'</p></div>'
+      text.value=""
+      chatbox.scrollTop=chatbox.scrollHeight
+  }  
+  </script>
+<picture>
+  <source media="(min-width: )" srcset="">
+  <img src="" alt="">
+</picture>  
+</html>
