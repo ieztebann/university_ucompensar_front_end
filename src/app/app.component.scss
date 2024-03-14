@@ -6,7 +6,54 @@ $primary-color-phone: #000000;
 $font-family : 'Rounded Mplus 1c Medium';
 $primary-color-text: #FFFEFF;
 $secundary-color-text: #9e9e9e;
+.contenedor {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 50vh; /* Establece la altura máxima del contenedor */
+    border-radius: 2vh; /* Borde negro */
+    border: 2px solid black; /* Borde negro */
 
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100vh;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.descripcion h2 {
+    margin-top: 0;
+}
+
+.descripcion p {
+    margin-bottom: 10px;
+}
+
+.precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 .stepper-wrapper {
     margin-top: 50px;
     display: flex;
