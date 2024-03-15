@@ -1,2 +1,4 @@
 # ucompensar_front_end
-Proyect ucompensar front end repo
+Proyecto fron end
+
+Esteban Bohorquez Rdoriguez
